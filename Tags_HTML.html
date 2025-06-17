@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo das aulas de HTML</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+
+        section h3,
+        footer  h4{
+           display: inline; 
+           margin-right: 10px;
+        }
+
+        section q{
+            display: flex;
+            margin: 15px 33px;
+        }
+
+        section mark{
+           margin-left: 30px;
+        }
+
+        footer h5{
+            margin: 5px;
+        }
+              
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Resumo das aulas de HTML do bootcamp Santander pela DIO.me</h1>
+        <hr/>
+
+        <nav>
+            <h2>Índice</h2>
+                <ul>
+                    <li id="semantica"><a href="#semantica1">O que é semântica?</a></li>
+                    <li id="acessivel"><a href="#acessivel1">O que é acessibilidade?</a></li>
+                    <li id="scraping"><a href="#scraping1">Entendendo Web Scraping</a></li>
+                    <li id="principal"><a href="#principal1">A importância de header, main e footer</a></li>
+                    <li id="secundario"><a href="#secundario1">As tags nav, section e aside</a></li>
+                    <li id="terciario"><a href="#terciario1">Article, Blockquote e Q</a></li>
+                    <li id="imagens"><a href="#imagens1">Diferenças entre figure, figcaption e picture</a></li>
+                    <li id="referencias"><a href="#referencias1">Referências</a></li>
+                    
+                </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <h3 id="semantica1">O que é semântica</h3><small><a href="#semantica">Voltar</a></small>
+
+                <p>Semântica no seu sentido real da palavra significa o sentido das palavras. Assim, quando falamos em um HTML Semântico
+                    nos referimos a deixar nossa página de HTML com uma leitura mais fluida e fácil, utilizando tags de fácil identificação para sua estruturação, melhorando assim tanto
+                    a leitura dos mecanismos de busca, <del>quanto</del> assim como a navegabilidade para pessoas portadores de deficiência visual.
+                </p>
+            
+        </section>
+
+        
+        <section>
+            <h3 id="acessivel1">O que é acessibilidade?</h3><small><a href="#acessivel">Voltar</a></small>
+
+                <p>Um html semântico deve ser montado utilizando recursos que facilitam, além dos navegadores e mecanismos de busca, os leitores de tela, que lêem em 
+                    voz alta cada contéudo da página, até mesmo de sua estruturação, como por exemplo uma tabela.
+                </p>
+
+        </section>
+
+        <section>
+            <h3 id="scraping1">Entendendo Web Scraping</h3><small><a href="#scraping">Voltar</a></small>        
+            
+                <p>É um programa usado para automatizar processos de coleta, consulta e indexação de dados. Os dados que são coletados são públicos, e são utilizados
+                para diversos fins, desde empregar para negócios como um olhar de comparação como também avaliar a reputação de uma empresa. Hoje o melhor exemplo que temos é o <strong>googlebot</strong>. </p>
+        </section>
+
+        <section>
+            <h3 id="principal1">A importância de header, main e footer</h3><small><a href="#principal">Voltar</a></small>
+                
+                <h4>Header</h4>
+                    <p>Em geral a tag header sinaliza o conteúdo de introdução da página, onde haverá logotipo, links de navegação, tag h1 (de título), na parte superior da página.</p>
+                                    
+                <h4> Main</h4>
+                    <p>A tag main serve para delimitar o contéudo principal de uma página. Sendo ela a principal, não é permitido que ela seja uma tag "filha"
+                        de outra tag, ou seja, não é permitido que se coloque um tag main dentro de uma tag footer por exemplo.
+                    </p>
+
+                <h4> Footer</h4>
+                    <p>A tag footer delimita o rodapé do documento. Dentro dele pode-se ter endereços, links, mapas e direitos autorais.</p>
+
+        </section>
+
+        <section>
+            <h3 id="secundario1">As tags nav, section e aside</h3><small><a href="#secundario">Voltar</a></small>
+
+                <h4>Nav</h4>
+                    <p>Essa tag define o espaço a ser utilizado para os links de navegação do site, que nesse caso pode ser considerado como uma lista de items a ser acessado,
+                        podendo ser de forma <i>"ordenada"</i>, ou seja, para acessar o próximo link deve passar pelo primeiro, ou de forma <i>"desordenada"</i>, quando o usuário pode navegar pelos links de forma aleatória,
+                        de acordo com o necessário.</p>
+
+                        <mark><strong>Exemplo de navegação por ordem:</strong></mark>
+
+                        <ol>
+                            <li>Introdução</li>
+                            <li>Aula 1</li>
+                            <li>Aula 2</li>
+                        </ol>
+
+                        <mark><strong>Exemplo de navegação por ordem aleatória:</strong></mark>
+
+                        <ul>
+                            <li>Empresa</li>
+                            <li>Clientes</li>
+                            <li>Endereço</li>
+                        </ul>
+
+                <h4>Section</h4>
+                    <p>A utilização da tag section do escopo do documento HTML é usado para definir as áreas destinadas às partes temáticas do documento. 
+                    Essa tag é mais semântica do que a utilização da tag div, por exemplo, que é muito genérica.</p>     
+                
+                <h4>Aside</h4>
+                    <p>Em geral a utlização da tag aside significa que o conteúdo englobado dentro dele não está diretamente relacionado com o conteúdo principal da página.
+                        Pode ser apenas um contéudo complementar ao destacado no main.
+                    </p>    
+        </section>
+
+        <section>
+            <h3 id="terciario1">Article, Blockquote e Q</h3><small><a href="#terciario">Voltar</a></small>
+
+                <h4>Article</h4>
+                    <p>O contéudo dentro de uma tag article deve fazer sentido por si própio. Pode-se ter várias tags article dentro de uma mesma página.
+                        Exemplos de contéudos dentro de um article são posts de blog e postagens de notícias.
+                    </p>
+
+                <h4>Blockquote</h4>
+                    <p> Dentro da tag blockquote é especificado uma seção que é uma citação de outro lugar. Por padrão essa tag já fornece um recuo da lateral da página.</p>
+
+                    <mark><strong>Exemplo de utilização de blockquote:</strong></mark>
+                    <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/blockquote">
+                        Indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo). 
+                        A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da fonte pode ser dada usando o <i>cite</i> elemento.
+                    </blockquote>
+
+                <h4>A tag q</h4>
+                    <p>De forma similar ao blockquote, a tag q serve para especificar uma seção de uma citação de outro lugar, porém diferente do blockquote, a tag q 
+                        serve para citações curtas. </p>
+
+                    <mark><strong>Exemplo de utilização da tag q:</strong></mark>    
+                    <q cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/q">
+                        Este elemento destina-se a citações curtas que não requerem marcações de parágrafo.
+                    </q>    
+
+        </section>
+
+        <section>
+            <h3 id="imagens1">Diferenças entre figure, figcaption e picture</h3><small><a href="#imagens">Voltar</a></small>
+            
+                <h4>Figure</h4>
+
+                    <p>A tag figure serve para delimitar o container (espaço) destinado a uma imagem/figura, dentro de sua página.</p>
+        
+                <h4>Figcaption</h4>
+
+                    <p>A tag figcaption é utilizada para definir a descrição de uma imagem ou figura que está dentro da tag figure.</p>
+        
+                <h4>Picture</h4>
+
+                    <p>De forma semelhante a tag figure, a tag picture também serve para uma imagem/figura, porém nesse caso deve forncer mais de uma fonte
+                        de imagem, permitindo que a imagem se ajuste de acordo com os critérios pré-estabelicidos, como por exemplo tamanho de tela. </p>
+        
+        </section>
+
+        <section>
+            <h3>O que é SEO?</h3><small><a href="#">Voltar</a></small>
+
+            <p>A <abbr title="Search Engine Optimization">SEO</abbr>(Search Engine Optimization), significa otimização de mecanismos de busca.
+                 São técnicas que ajudam a uma página de site se destacar perante as demais, para aumentar seu tráfego, ou seja, ajuda esses mecanismosa entender
+                seu contéudo e "apresenta-lo" aos usuários para que eles decidam devem acessá-lo. </p>
+
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <h4 id="referencias1"><u>Referências</u></h4> <a href="#referencias">Voltar</a>
+            <h5>O que é semântica?</h5>
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantic Elements</a>
+            
+            <h5>O que é acessibilidade?</h5>
+                <a href="https://www.w3schools.com/html/html_accessibility.asp">HTML Accessibility</a>
+            
+            <h5>Entendendo Web Scraping</h5>
+                <a href="https://netrin.com.br/apis/web-scraping-o-que-e-como-funciona/">Web scraping: o que é, como funciona e para que serve?</a>
+           
+            <h5>A importância de header, main e footer</h5>
+                <a href="https://www.w3schools.com/TAGS/tag_header.asp">HTML header Tag</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_main.asp">HTML main Tag</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_footer.asp">HTML footer Tag</a>
+           
+            <h5>As tags nav, section e aside</h5>
+                <a href="https://www.w3schools.com/TAGS/tag_nav.asp">HTML nav Tag</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_section.asp">HTML section Tag</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_aside.asp">HTML aside Tag</a>
+           
+            <h5>Article, Blockquote e Q</h5>
+                <a href="https://www.w3schools.com/TAGS/tag_article.asp">HTML article Tag</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_blockquote.asp">HTML blockquote Tag</a><br>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/blockquote">Tag blockquote</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_q.asp">HTML q Tag</a><br>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/q">Tag q</a><br>
+           
+            <h5>Diferenças entre figure, figcaption e picture</h5>
+                <a href="https://www.w3schools.com/TAGS/tag_figure.asp">HTML figure Tag</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_figcaption.asp">HTML figcaption Tag</a><br>
+                <a href="https://www.w3schools.com/TAGS/tag_picture.asp">HTML picture Tag</a>
+    
+            <h5> O que é SEO?</h5>
+                <a href="https://www.rdstation.com/blog/marketing/o-que-e-seo/">O que é Search Engine Optimization — SEO para iniciantes</a>
+    
+    
+        <h6>Proposta de projeto do Bootcamp Samtander e DIO.me produzido por Núbia. M. Almeida</h6>        
+    </footer>
+</body>
+</html>
